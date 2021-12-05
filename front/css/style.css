@@ -1,0 +1,312 @@
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.ls-toggle-menu .logout-button,
+.ls-toggle-menu .subscription-info,
+.ls-toggle-menu .language-info {
+  display: none !important;
+}
+
+.sidebar .menu .list li a.builder_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info {
+  display: block;
+}
+
+.sidebar .menu .list li a.builder_info .builder_name {
+  margin-top: 1px;
+}
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info .builder_name {
+  margin-top: 0;
+}
+
+.sidebar .menu .list li a.builder_info .builder_balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d7d7d7;
+  border-radius: 10px;
+  padding: 4px 6px 2px;
+}
+
+.theme-dark .sidebar .menu .list li a.builder_info .builder_balance {
+  background-color: #3c3c3c;
+}
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info .builder_balance {
+  display: none;
+}
+
+.sidebar .menu .list li a.builder_info .builder_balance span {
+  color: #222 !important;
+}
+
+.theme-dark .sidebar .menu .list li a.builder_info .builder_balance span {
+  color: #8c8c8c !important;
+}
+
+.language-change-wrapper {
+  display: inline-block;
+  position: relative;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.language-change-wrapper .language-change-current {
+  border-radius: 10px;
+  border: 1px solid #444;
+  color: #444 !important;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "SenseiMedium";
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.language-change-wrapper .language-change-list {
+  background: white;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border: 1px solid #444;
+  color: #444 !important;
+  outline: none;
+  font-family: "SenseiMedium";
+  font-size: 12px;
+}
+
+.language-change-wrapper .language-change-list.open {
+  display: inline-block !important;
+}
+
+.language-change-wrapper .language-change-list .language-change-list-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pagination .previous:not(.btn),
+.pagination .next:not(.btn) {
+  margin: 0 20px;
+}
+
+.pagination .btn.previous,
+.pagination .btn.next {
+  color: white !important;
+  text-decoration: none;
+}
+
+.pagination .break-me {
+  margin: 0 5px;
+}
+
+.pagination .active .num {
+  color: black;
+}
+
+.pagination .num {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination .num:hover {
+  text-decoration: underline;
+}
+
+.btn-success {
+  background-color: #04be5b !important;
+  color: #fff !important;
+}
+
+.own-custom-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 100px;
+  position: relative;
+}
+
+.own-custom-select .custom-input-07 {
+  padding-bottom: 10px;
+}
+
+.own-custom-select .enter {
+  position: relative;
+}
+
+.own-custom-select .enter .input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: none;
+  font-family: mainRegular;
+  font-size: 12px;
+}
+
+.own-custom-select .enter .input input {
+  color: #000 !important;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.own-custom-select .enter .input .value {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc !important;
+}
+
+.own-custom-select .enter .input .value .delete {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+  margin-left: 5px;
+}
+
+.own-custom-select .enter .input .value .delete:hover {
+  opacity: 1;
+}
+
+.own-custom-select .enter .input .value .delete:before,
+.own-custom-select .enter .input .value .delete:after {
+  position: absolute;
+  right: 12px;
+  content: " ";
+  height: 12px;
+  width: 2px;
+  background-color: #ff0000;
+}
+
+.own-custom-select .enter .input .value .delete:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.own-custom-select .enter .input .value .delete:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.own-custom-select .enter .button {
+  background-image: url("/img/enter.png");
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.own-custom-select label {
+  font-family: mainRegular;
+  padding: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input.primary:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mark-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 2px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.mark-color.active {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */

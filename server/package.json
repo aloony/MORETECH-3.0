@@ -1,0 +1,26 @@
+{
+  "name": "vnt-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cluster.js"
+  },
+  "author": "IATNAOD",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "fastify": "^3.22.0",
+    "fastify-autoload": "^3.9.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-multipart": "^5.0.2",
+    "fastify-passport": "^0.4.3",
+    "fastify-plugin": "^3.0.0",
+    "fastify-secure-session": "^2.3.1",
+    "fastify-static": "^4.4.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.10",
+    "node-cron": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

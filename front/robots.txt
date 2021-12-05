@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin-edit-catalog
+Disallow: /admin-orders
+Disallow: /admin-transactions
+Disallow: /admin-settings
+Disallow: /admin-logs
+Disallow: /admin-faqs
+Disallow: /admin-news

@@ -1,0 +1,364 @@
+.cursor-pointer
+  cursor: pointer !important
+
+.ls-toggle-menu
+  .logout-button,.subscription-info,.language-info
+    display: none!important
+
+.sidebar .menu .list li a.builder_info
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info
+  display: block
+
+.sidebar .menu .list li a.builder_info .builder_name
+  margin-top: 1px
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info .builder_name
+  margin-top: 0
+
+.sidebar .menu .list li a.builder_info .builder_balance
+  display: flex
+  align-items: center
+  background-color: #d7d7d7
+  border-radius: 10px
+  padding: 4px 6px 2px
+
+.theme-dark .sidebar .menu .list li a.builder_info .builder_balance
+  background-color: #3c3c3c
+
+.ls-toggle-menu .sidebar .menu .list li a.builder_info .builder_balance
+  display: none
+
+.sidebar .menu .list li a.builder_info .builder_balance span
+  color: #222 !important
+
+.theme-dark .sidebar .menu .list li a.builder_info .builder_balance span
+  color: #8c8c8c !important
+
+.language-change-wrapper
+  display: inline-block
+  position: relative
+  margin-top: 5px
+  z-index: 1
+
+  .language-change-current
+    border-radius: 10px
+    border: 1px solid #444
+    color: #444 !important
+    padding: 5px 10px
+    outline: none
+    font-family: "SenseiMedium"
+    font-size: 12px
+    cursor: pointer
+
+  .language-change-list
+    background: white
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 10px
+    border: 1px solid #444
+    color: #444 !important
+    outline: none
+    font-family: "SenseiMedium"
+    font-size: 12px
+
+    &.open
+      display: inline-block!important
+
+    .language-change-list-item
+      padding: 5px 10px
+      cursor: pointer
+
+.pagination
+  justify-content: center
+  align-items: center
+
+  .previous:not(.btn),.next:not(.btn)
+    margin: 0 20px
+
+  .btn.previous ,.btn.next
+    color: white!important
+    text-decoration: none
+
+  .break-me
+    margin: 0 5px
+
+  .active
+    .num
+      color: black
+
+  .num
+    margin: 0 5px
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+
+.btn-success
+  background-color: #04BE5B!important
+  color: #fff!important
+
+// custom select
+.own-custom-select
+  user-select: none
+  min-width: 100px
+  position: relative
+
+  .custom-input-07
+
+  .enter
+    position: relative
+
+    .input
+      width: 100%
+      border-radius: 10px
+      border: 1px solid #ccc
+      padding: 10px
+      outline: none
+      font-family: mainRegular
+      font-size: 12px
+
+      input
+        color: #000!important
+        border: 0
+        outline: none
+        background: transparent
+
+      .value
+        position: relative
+        display: inline-flex
+        align-items: center
+        padding: 5px 10px
+        border-radius: 10px
+        border: 1px solid #ccc!important
+
+        .delete
+          display: inline-block
+          width: 12px
+          height: 12px
+          opacity: 0.6
+          margin-left: 5px
+
+          &:hover
+            opacity: 1
+
+          &:before, &:after
+            position: absolute
+            right: 12px
+            content: ' '
+            height: 12px
+            width: 2px
+            background-color: #ff0000
+
+          &:before
+            transform: rotate(45deg)
+
+          &:after
+            transform: rotate(-45deg)
+
+    .button
+      background-image: url('/img/enter.png')
+      position: absolute
+      right: 10px
+      top: calc(50% - 10px)
+      width: 20px
+      height: 20px
+      background-size: cover
+      cursor: pointer
+
+  label
+    font-family: mainRegular
+    padding: 5px
+
+.switch
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 34px
+  float: right
+
+.switch input
+  display: none
+
+.slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #ccc
+  -webkit-transition: .4s
+  transition: .4s
+
+.slider:before
+  position: absolute
+  content: ""
+  height: 26px
+  width: 26px
+  left: 4px
+  bottom: 4px
+  background-color: white
+  -webkit-transition: .4s
+  transition: .4s
+
+input.primary:checked + .slider
+  background-color: #2196F3
+
+input:focus + .slider
+  box-shadow: 0 0 1px #2196F3
+
+input:checked + .slider:before
+  -webkit-transform: translateX(26px)
+  -ms-transform: translateX(26px)
+  transform: translateX(26px)
+
+.slider.round
+  border-radius: 34px
+
+.slider.round:before
+  border-radius: 50%
+
+.mark-color
+  display: inline-block
+  width: 16px
+  height: 16px
+  border-radius: 3px
+  margin-right: 2px
+  opacity: .8
+  cursor: pointer
+
+  &.active
+    border: 2px solid black
+
+.log-tooltip
+  position: absolute
+  background: #fff
+  box-shadow: 0 0 4px #bfbfbf
+  border: 1px solid #3f8cff
+  border-radius: 10px
+  // padding: 6px 10px
+  z-index: 99999
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  color: #333
+
+  .table
+    border-radius: 12px!important
+
+.modal-lgt
+  max-width: 1000px
+
+.login-cover
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  .login-cover-image
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    transition: background .2s linear
+    background-image: url('./../img/shared-stats.jpg')
+
+.stats-external 
+  z-index: 100
+  position: relative
+
+.width-lg 
+  width: 600px!important
+
+.m-t-40 
+  margin-top: 40px!important
+
+.m-auto 
+    margin: 0 auto!important
+
+.tab-content 
+  padding: 15px
+  margin-bottom: 20px
+  background: #fff
+  border-radius: 3px
+
+.nav-pills 
+  margin-bottom: 10px
+
+.badge, .label 
+  font-size: 75%
+  color: #fff
+  font-weight: 600
+  text-align: center
+  white-space: nowrap
+
+.label 
+  display: inline
+  padding: .2em .6em .3em
+  line-height: 1
+  vertical-align: baseline
+  border-radius: .25em
+
+.badge.badge-warning, .label.label-warning 
+  background: #f59c1a
+
+.badge.badge-info, .label.label-info 
+  background: #49b6d6
+
+.badge.badge-danger, .label.label-danger 
+  background: #ff5b57
+
+.width-80 
+  width: 80px!important
+
+.own-custom-select
+
+  .own-custom-select-list
+    user-select: none
+    transition: 0.4s ease-out all
+    overflow-y: overlay
+    position: absolute
+    top: calc(100% - 1px)
+    left: 0
+    width: 100%
+    background: #fff
+    border: 1px solid #ccc
+    border-radius: 10px
+    max-height: 200px
+    z-index: 6
+
+    &.none
+      opacity: 0
+      z-index: -1
+
+    ul
+      padding: 6px
+      list-style: none
+      margin: 0
+
+      li
+        padding: 5px
+        text-align: left
+
+        a
+          font-size: 12px
+          font-family: "WeirdRegular"
+          color: black
+
+          &:hover
+            cursor: pointer
+            color: grey!important
+
+.overflow-x-scroll
+  overflow-x: scroll
